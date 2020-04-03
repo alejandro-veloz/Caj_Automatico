@@ -1,0 +1,7 @@
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\bin\Debug\Caj_Automatico.exe.config
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\bin\Debug\Caj_Automatico.exe
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\bin\Debug\Caj_Automatico.pdb
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\obj\Debug\Caj_Automatico.csprojAssemblyReference.cache
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\obj\Debug\Caj_Automatico.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\obj\Debug\Caj_Automatico.exe
+C:\Users\acer\source\repos\Caj_Automatico\Caj_Automatico\obj\Debug\Caj_Automatico.pdb
