@@ -102,7 +102,7 @@ namespace Caj_Automatico
                     Console.WriteLine("Billetes de 500RD$ restantes :" + B500);
                     Console.WriteLine("Billetes de 200RD$ restantes :" + B200);
                     Console.WriteLine("Billetes de 100RD$ restantes :" + B100);
-                    Console.WriteLine("---EL VALOR TOTAL DE TODOS LOS BILLETES SON---");
+                    Console.WriteLine("---EL VALOR TOTAL DE TODOS LOS BILLETES RESTANTES SON---");
                     Console.WriteLine("Valor total de todos los billetes de 1,000RD$ :" + cantidad1);
                     Console.WriteLine("Valor total de todos los billetes de 500RD$ :" + cantidad2);
                     Console.WriteLine("Valor total de todos los billetes de 200RD$ :" + cantidad3);
