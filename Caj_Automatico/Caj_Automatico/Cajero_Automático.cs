@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +14,10 @@ namespace Caj_Automatico
             while (menu != "1")
             {
 
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.BackgroundColor = ConsoleColor.White;
                 int B1000 = 40, B500 = 60, B200 = 100, B100 = 100;
-
+                int cantidad1 = B1000 * 1000, cantidad2 = B500 * 500, cantidad3 = B200 * 200, cantidad4 = B100 * 100;
                 Console.WriteLine("                  Bienvenido                 ");
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
@@ -26,17 +27,17 @@ namespace Caj_Automatico
                 int PIN = int.Parse(Console.ReadLine());
                 Console.Clear();
 
-                int cantidad1 = B1000 * 1000, cantidad2 = B500 * 500, cantidad3 = B200 * 200, cantidad4 = B100 * 100;
+
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
                 Console.WriteLine("*********************************************");
-                Console.WriteLine("Nuestro cajero solo contiene billetes de:" + " 1,000RD$," + " 500RD$," + " 200RD$" + " y 100RD$ ");
+                Console.WriteLine("Nuestro cajero solo contiene billetes de -->> 1,000RD$, 500RD$, 200RD$ y 100RD$ ");
                 Console.WriteLine("Presione la Tecla (Enter) Para -->> Continuar ........");
                 Console.ReadLine();
                 Console.Clear();
 
-                
+
 
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
@@ -69,7 +70,7 @@ namespace Caj_Automatico
                         monto = monto - (retiro * 1000);
                         B1000 -= retiro;
                         cantidad1 = cantidad1 - (retiro * 1000);
-                        Console.WriteLine("Billetes de 1,000RD$: " + retiro);
+                        Console.WriteLine("Billetes de 1,000RD$ -->> " + retiro);
                     }
                     if (monto >= 500)
                     {
@@ -77,7 +78,7 @@ namespace Caj_Automatico
                         monto = monto - (retiro * 500);
                         B500 -= retiro;
                         cantidad2 = cantidad2 - (retiro * 500);
-                        Console.WriteLine("Billetes de 500RD$: " + retiro);
+                        Console.WriteLine("Billetes de 500RD$ -->> " + retiro);
                     }
                     if (monto >= 200)
                     {
@@ -86,7 +87,7 @@ namespace Caj_Automatico
 
                         B200 -= retiro;
                         cantidad3 = cantidad3 - (retiro * 200);
-                        Console.WriteLine("Billetes de 200RD$: " + retiro);
+                        Console.WriteLine("Billetes de 200RD$ -->> " + retiro);
                     }
                     if (monto >= 100)
                     {
@@ -94,24 +95,24 @@ namespace Caj_Automatico
                         monto = monto - (retiro * 100);
                         B100 -= retiro;
                         cantidad4 = cantidad4 - (retiro * 100);
-                        Console.WriteLine("Billetes de 100RD$: " + retiro);
+                        Console.WriteLine("Billetes de 100RD$ -->> " + retiro);
                     }
 
                     Console.WriteLine("---LA CANTIDAD DE BILLETES RESTANTES SON LAS SIGUIENTES---");
-                    Console.WriteLine("Billetes de 1,000RD$ restantes :" + B1000);
-                    Console.WriteLine("Billetes de 500RD$ restantes :" + B500);
-                    Console.WriteLine("Billetes de 200RD$ restantes :" + B200);
-                    Console.WriteLine("Billetes de 100RD$ restantes :" + B100);
+                    Console.WriteLine("Billetes de 1,000RD$ restantes -->> " + B1000);
+                    Console.WriteLine("Billetes de 500RD$ restantes -->> " + B500);
+                    Console.WriteLine("Billetes de 200RD$ restantes -->> " + B200);
+                    Console.WriteLine("Billetes de 100RD$ restantes -->> " + B100);
                     Console.WriteLine("---EL VALOR TOTAL DE TODOS LOS BILLETES RESTANTES SON---");
-                    Console.WriteLine("Valor total de todos los billetes de 1,000RD$ :" + cantidad1);
-                    Console.WriteLine("Valor total de todos los billetes de 500RD$ :" + cantidad2);
-                    Console.WriteLine("Valor total de todos los billetes de 200RD$ :" + cantidad3);
-                    Console.WriteLine("Valor total de todos los billetes de 100RD$ :" + cantidad4);
+                    Console.WriteLine("Valor total de todos los billetes de 1,000RD$ -->> " + cantidad1);
+                    Console.WriteLine("Valor total de todos los billetes de 500RD$ -->> " + cantidad2);
+                    Console.WriteLine("Valor total de todos los billetes de 200RD$ -->> " + cantidad3);
+                    Console.WriteLine("Valor total de todos los billetes de 100RD$ -->> " + cantidad4);
                     Console.WriteLine("Presione la Tecla (Enter) Para -->> Continuar ........");
 
                     Console.ReadKey();
                     Console.Clear();
-                    Console.WriteLine("Si desea salir presione (1), si quiere continuar presione(2)");
+                    Console.WriteLine("Escriba (1) desea salir presione , escriba (2) si quiere continuar");
                     menu = Console.ReadLine();
 
                     Console.Clear();
@@ -122,6 +123,3 @@ namespace Caj_Automatico
         }
     }
 }
-
-
-
