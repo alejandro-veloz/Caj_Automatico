@@ -43,7 +43,7 @@ namespace Caj_Automatico
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
                 Console.WriteLine("*********************************************");
-                Console.WriteLine("Si ingresa un monto que sea superior a la cantidad máxima, el progama se reiniciara");
+                Console.WriteLine("Si ingresa un monto que sea superior a la cantidad máxima, el programa se reiniciara");
                 Console.WriteLine("y volvera a pedirle sus datos.");
                 Console.WriteLine("La cantidad máxima es: " + "15,000RD$");
                 Console.WriteLine("---Ingrese la cantidad que desea retirar---");
