@@ -30,7 +30,7 @@ namespace Caj_Automatico
                     Console.WriteLine("**            CAJERO AUTOMATICO            **");
                     Console.WriteLine("**               DE LA ROSA                **");
                     Console.WriteLine("*********************************************");
-                    Console.WriteLine("Si su clave es incorrecta, el programa volvera a pedirle su clave nuevamente.");
+                    Console.WriteLine("Si su clave es incorrecta o ingresa letras, el programa volvera a pedirle su clave nuevamente.");
                     Console.WriteLine("---Ingrese su clave---");
                     CLAVE = Console.ReadLine();
                     si = int.TryParse(CLAVE, out clave2);
@@ -65,7 +65,9 @@ namespace Caj_Automatico
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
                 Console.WriteLine("*********************************************");
+                
                 int retiro;
+
                 if (monto > 15000)
                 {
 
@@ -107,6 +109,7 @@ namespace Caj_Automatico
                         cantidad4 = cantidad4 - (retiro * 100);
                         Console.WriteLine("Billetes de 100RD$ -->> " + retiro);
                     }
+
                     /*Para almacenar las papelets recibidas y las restantes*/
                     Console.WriteLine("---LA CANTIDAD DE BILLETES RESTANTES SON LAS SIGUIENTES---");
                     Console.WriteLine("Billetes de 1,000RD$ restantes -->> " + B1000);
