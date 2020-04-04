@@ -9,25 +9,35 @@ namespace Caj_Automatico
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            /*Para saber si quiere salir o continuar*/
             string menu = "2";
             while (menu != "1")
             {
 
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.BackgroundColor = ConsoleColor.White;
+                /*Valores asignados a las papeletas y otras variables para almacenar los datos*/
                 int B1000 = 40, B500 = 60, B200 = 100, B100 = 100;
                 int cantidad1 = B1000 * 1000, cantidad2 = B500 * 500, cantidad3 = B200 * 200, cantidad4 = B100 * 100;
-                Console.WriteLine("                  Bienvenido                 ");
-                Console.WriteLine("*********************************************");
-                Console.WriteLine("**            CAJERO AUTOMATICO            **");
-                Console.WriteLine("**               DE LA ROSA                **");
-                Console.WriteLine("*********************************************");
-                Console.WriteLine("---Ingrese su clave---");
-                int PIN = int.Parse(Console.ReadLine());
-                Console.Clear();
+                bool si;
+                string CLAVE;
+                int clave2;
+                 /*Para poder ingresar al programa con una clave*/
+                do {
+                    Console.WriteLine("                  Bienvenido                 ");
+                    Console.WriteLine("*********************************************");
+                    Console.WriteLine("**            CAJERO AUTOMATICO            **");
+                    Console.WriteLine("**               DE LA ROSA                **");
+                    Console.WriteLine("*********************************************");
+                    Console.WriteLine("Si su clave es incorrecta, el programa volvera a pedirle su clave nuevamente.");
+                    Console.WriteLine("---Ingrese su clave---");
+                    CLAVE = Console.ReadLine();
+                    si = int.TryParse(CLAVE, out clave2);
+                    Console.Clear();
+                } while (!si);
 
-
+                
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
@@ -43,14 +53,14 @@ namespace Caj_Automatico
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
                 Console.WriteLine("*********************************************");
-                Console.WriteLine("Si ingresa un monto que sea superior a la cantidad máxima, el programa se reiniciara");
+                Console.WriteLine("Si ingresa un monto que sea superior a la cantidad máxima, el progama se reiniciara");
                 Console.WriteLine("y volvera a pedirle sus datos.");
-                Console.WriteLine("La cantidad máxima es: " + "15,000RD$");
+                Console.WriteLine("La cantidad máxima es -->> 15,000RD$");
                 Console.WriteLine("---Ingrese la cantidad que desea retirar---");
                 int monto = int.Parse(Console.ReadLine());
                 Console.Clear();
 
-
+                /*Para la distribución de las papeletas*/
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
@@ -59,7 +69,7 @@ namespace Caj_Automatico
                 if (monto > 15000)
                 {
 
-                    Console.Clear();
+                    
                 }
                 if (monto <= 15000)
                 {
@@ -97,7 +107,7 @@ namespace Caj_Automatico
                         cantidad4 = cantidad4 - (retiro * 100);
                         Console.WriteLine("Billetes de 100RD$ -->> " + retiro);
                     }
-
+                    /*Para almacenar las papelets recibidas y las restantes*/
                     Console.WriteLine("---LA CANTIDAD DE BILLETES RESTANTES SON LAS SIGUIENTES---");
                     Console.WriteLine("Billetes de 1,000RD$ restantes -->> " + B1000);
                     Console.WriteLine("Billetes de 500RD$ restantes -->> " + B500);
@@ -112,9 +122,8 @@ namespace Caj_Automatico
 
                     Console.ReadKey();
                     Console.Clear();
-                    Console.WriteLine("Escriba (1) desea salir presione , escriba (2) si quiere continuar");
+                    Console.WriteLine("Ingrese (1) si desea salir, y si quiere continuar ingrese (2)");
                     menu = Console.ReadLine();
-
                     Console.Clear();
 
 
