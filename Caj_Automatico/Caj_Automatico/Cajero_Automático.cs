@@ -13,9 +13,7 @@ namespace Caj_Automatico
             /*Para saber si quiere salir o continuar*/
             string menu = "2";
             while (menu != "1")
-            {
-
-                
+            {  
                 /*Valores asignados a las papeletas y otras variables para almacenar los datos*/
                 int B1000 = 40, B500 = 60, B200 = 100, B100 = 100;
                 int cantidad1 = B1000 * 1000, cantidad2 = B500 * 500, cantidad3 = B200 * 200, cantidad4 = B100 * 100;
@@ -37,7 +35,6 @@ namespace Caj_Automatico
                     Console.Clear();
                 } while (!si);
 
-                
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
                 Console.WriteLine("**               DE LA ROSA                **");
@@ -46,8 +43,6 @@ namespace Caj_Automatico
                 Console.WriteLine("Presione la Tecla (Enter) Para -->> Continuar ........");
                 Console.ReadLine();
                 Console.Clear();
-
-
 
                 Console.WriteLine("*********************************************");
                 Console.WriteLine("**            CAJERO AUTOMATICO            **");
@@ -117,10 +112,10 @@ namespace Caj_Automatico
                     Console.WriteLine("Billetes de 200RD$ restantes -->> " + B200);
                     Console.WriteLine("Billetes de 100RD$ restantes -->> " + B100);
                     Console.WriteLine("---EL VALOR TOTAL DE TODOS LOS BILLETES RESTANTES SON---");
-                    Console.WriteLine("Valor total de todos los billetes de 1,000RD$ -->> " + cantidad1);
-                    Console.WriteLine("Valor total de todos los billetes de 500RD$ -->> " + cantidad2);
-                    Console.WriteLine("Valor total de todos los billetes de 200RD$ -->> " + cantidad3);
-                    Console.WriteLine("Valor total de todos los billetes de 100RD$ -->> " + cantidad4);
+                    Console.WriteLine("Billetes restantes de 1,000RD$ -->> " + cantidad1);
+                    Console.WriteLine("Billetes restantes de 500RD$ -->> " + cantidad2);
+                    Console.WriteLine("Billetes restantes de 200RD$ -->> " + cantidad3);
+                    Console.WriteLine("Billetes restantes de 100RD$ -->> " + cantidad4);
                     Console.WriteLine("Presione la Tecla (Enter) Para -->> Continuar ........");
 
                     Console.ReadKey();
