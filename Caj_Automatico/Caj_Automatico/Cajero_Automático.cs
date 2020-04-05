@@ -15,14 +15,14 @@ namespace Caj_Automatico
             while (menu != "1")
             {
 
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.BackgroundColor = ConsoleColor.White;
+                
                 /*Valores asignados a las papeletas y otras variables para almacenar los datos*/
                 int B1000 = 40, B500 = 60, B200 = 100, B100 = 100;
                 int cantidad1 = B1000 * 1000, cantidad2 = B500 * 500, cantidad3 = B200 * 200, cantidad4 = B100 * 100;
                 bool si;
                 string CLAVE;
                 int clave2;
+                Console.ForegroundColor = ConsoleColor.Blue;
                  /*Para poder ingresar al programa con una clave*/
                 do {
                     Console.WriteLine("                  Bienvenido                 ");
